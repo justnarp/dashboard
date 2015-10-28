@@ -1,9 +1,11 @@
 body {
     background-color: #333745;
+    font-family: Roboto, sans-serif;
 }
 
 #inner {
     background-color: #ea2e49;
+    background-color: #2980b9;
     position: fixed;
     z-index: 9;
     background-image: url("icons/marketing8.svg");
@@ -24,10 +26,12 @@ body {
 
 .open {
     opacity: 1;
+    display: block;
     transition: opacity .1s;
 }
 .close {
     opacity: 0;
+    display: none;
 }
 .open div {
     opacity: 1;
@@ -38,13 +42,13 @@ body {
 }
 
 #menu {
-    background-color: #ea2e49;
+    background-color: #3498db;
     width: 50px;
     height: 50px;
     position: fixed;
     top: 10px;
     right: 10px;
-    transition: background-color .2s;
+    transition: background 1s;
     border: 0px solid transparent;
     border-radius: 30px;
     box-sizing: border-box;
@@ -56,12 +60,12 @@ body {
     background-size: 28px;
 }
 #menu:hover {
-
+    background-color: #2980b9;
+    transition: background .5s;
 }
 
 .app {
-    font: 14px sans-serif;
-    text-transform: uppercase;
+    font-size: 14px;
     padding-left: 60px;
     line-height: 59px;
     color: white;

@@ -13,7 +13,7 @@ var data = {
 function addApps(data) {
     var apps = [
         {
-            app: 'App 1',
+            app: 'Dashboard',
             env: {
                 aite: 'http://aite.app1/' + data.customerNumber + '/' + data.locale,
                 site: 'http://site.app1/' + data.customerNumber + '/something/' + data.locale
@@ -21,7 +21,7 @@ function addApps(data) {
             icon: 'url("icons/finance-and-business5.svg")'
         },
         {
-            app: 'App 2',
+            app: 'Profile',
             env: {
                 aite: 'http://aite.app2/' + data.customerNumber + '/' + data.locale,
                 site: 'http://site.app2/' + data.customerNumber + '/something/' + data.locale
@@ -29,7 +29,7 @@ function addApps(data) {
             icon: 'url("icons/businessman277.svg")'
         },
         {
-            app: 'App 3',
+            app: 'Investment Advice',
             env: {
                 aite: 'http://aite.app3/' + data.customerNumber + '/' + data.locale,
                 site: 'http://site.app3/' + data.customerNumber + '/something/' + data.locale
