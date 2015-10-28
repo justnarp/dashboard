@@ -1,0 +1,84 @@
+body {
+    background-color: #333745;
+}
+
+#inner {
+    background-color: #ea2e49;
+    position: fixed;
+    z-index: 9;
+    background-image: url("icons/marketing8.svg");
+    background-repeat: no-repeat;
+    background-position-x: 258px;
+    background-position-y: 24px;
+    background-size: 30px;
+    padding: 7px 0 5px 5px;
+    width: 300px;
+    top: -1px;
+    right: 0;
+}
+
+#menu-icon {
+    float: right;
+    margin: 17px 10px 0 0;
+}
+
+.open {
+    opacity: 1;
+    transition: opacity .1s;
+}
+.close {
+    opacity: 0;
+}
+.open div {
+    opacity: 1;
+    transition: opacity .3s;
+}
+.close div {
+    opacity: 0;
+}
+
+#menu {
+    background-color: #ea2e49;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    transition: background-color .2s;
+    border: 0px solid transparent;
+    border-radius: 30px;
+    box-sizing: border-box;
+    z-index: 10;
+    background-image: url("icons/marketing8.svg");
+    background-repeat: no-repeat;
+    background-position-x: 14px;
+    background-position-y: 14px;
+    background-size: 28px;
+}
+#menu:hover {
+
+}
+
+.app {
+    font: 14px sans-serif;
+    text-transform: uppercase;
+    padding-left: 60px;
+    line-height: 59px;
+    color: white;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position-x: 15px;
+    background-position-y: 15px;
+    background-size: 25px;
+    margin-right: 70px;
+    transition: font .1s;
+}
+
+.app:focus {
+    outline: none;
+}
+.app:hover {
+    cursor: pointer;
+    font-size: 16px;
+    transition: font .1s;
+}
