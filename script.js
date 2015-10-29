@@ -1,6 +1,5 @@
 function toggle() {
     var e = document.getElementById('inner');
-    //e.style.display == 'none' ? e.style.display = 'block' : e.style.display = 'none';
     e.className == 'open' ? e.className = 'close' : e.className = 'open';
 }
 
@@ -14,27 +13,27 @@ function addApps(data) {
     var apps = [
         {
             app: 'Dashboard',
+            key: 'dashboard',
             env: {
                 aite: 'http://aite.app1/' + data.customerNumber + '/' + data.locale,
                 site: 'http://site.app1/' + data.customerNumber + '/something/' + data.locale
-            },
-            icon: 'url("icons/finance-and-business5.svg")'
+            }
         },
         {
             app: 'Profile',
+            key: 'profile',
             env: {
                 aite: 'http://aite.app2/' + data.customerNumber + '/' + data.locale,
                 site: 'http://site.app2/' + data.customerNumber + '/something/' + data.locale
-            },
-            icon: 'url("icons/businessman277.svg")'
+            }
         },
         {
             app: 'Investment Advice',
+            key: 'iap',
             env: {
                 aite: 'http://aite.app3/' + data.customerNumber + '/' + data.locale,
                 site: 'http://site.app3/' + data.customerNumber + '/something/' + data.locale
-            },
-            icon: 'url("icons/chart1.svg")'
+            }
         }
     ];
 
@@ -44,8 +43,7 @@ function addApps(data) {
             location.href = element.env[data.env];
         };
         var el = document.createElement('div');
-        el.style.backgroundImage = element.icon;
-        el.className = 'app';
+        el.className = 'app ' + element.key;
         el.onclick = href;
         el.innerHTML = element.app;
         el.style.backgroundImage = element.icon;
